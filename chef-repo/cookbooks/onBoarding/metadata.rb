@@ -8,4 +8,3 @@ version          '0.1.0'
 
 depends "java"
 depends "tomcat7"
-depends "git"
