@@ -1,0 +1,419 @@
+I, [2015-03-11T14:38:47.054712 #29168]  INFO -- default-opscode-ubuntu-1410: -----> Creating <default-opscode-ubuntu-1410>...
+I, [2015-03-11T14:38:48.682227 #29168]  INFO -- default-opscode-ubuntu-1410: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-03-11T14:38:48.886584 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Importing base box 'opscode-ubuntu-14.10'...
+I, [2015-03-11T14:39:06.367251 #29168]  INFO -- default-opscode-ubuntu-1410: [KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-03-11T14:39:07.208243 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Setting the name of the VM: default-opscode-ubuntu-1410_default_1426095547161_49949
+I, [2015-03-11T14:39:07.751696 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-03-11T14:39:07.814367 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Clearing any previously set network interfaces...
+I, [2015-03-11T14:39:07.933559 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Preparing network interfaces based on configuration...
+I, [2015-03-11T14:39:07.933925 #29168]  INFO -- default-opscode-ubuntu-1410:     default: Adapter 1: nat
+I, [2015-03-11T14:39:08.079233 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Forwarding ports...
+I, [2015-03-11T14:39:08.146246 #29168]  INFO -- default-opscode-ubuntu-1410:     default: 22 => 2200 (adapter 1)
+I, [2015-03-11T14:39:08.614462 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Booting VM...
+I, [2015-03-11T14:39:09.204221 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-03-11T14:39:09.481631 #29168]  INFO -- default-opscode-ubuntu-1410:     default: SSH address: 127.0.0.1:2200
+I, [2015-03-11T14:39:09.481869 #29168]  INFO -- default-opscode-ubuntu-1410:     default: SSH username: vagrant
+I, [2015-03-11T14:39:09.482033 #29168]  INFO -- default-opscode-ubuntu-1410:     default: SSH auth method: private key
+I, [2015-03-11T14:39:24.653575 #29168]  INFO -- default-opscode-ubuntu-1410:     default: Warning: Connection timeout. Retrying...
+I, [2015-03-11T14:39:25.406194 #29168]  INFO -- default-opscode-ubuntu-1410:     default: 
+I, [2015-03-11T14:39:25.406315 #29168]  INFO -- default-opscode-ubuntu-1410:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-03-11T14:39:25.406356 #29168]  INFO -- default-opscode-ubuntu-1410:     default: this with a newly generated keypair for better security.
+I, [2015-03-11T14:39:26.502674 #29168]  INFO -- default-opscode-ubuntu-1410:     default: 
+I, [2015-03-11T14:39:26.502793 #29168]  INFO -- default-opscode-ubuntu-1410:     default: Inserting generated public key within guest...
+I, [2015-03-11T14:39:26.860627 #29168]  INFO -- default-opscode-ubuntu-1410:     default: Removing insecure key from the guest if its present...
+I, [2015-03-11T14:39:27.131375 #29168]  INFO -- default-opscode-ubuntu-1410:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-03-11T14:39:28.194710 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Machine booted and ready!
+I, [2015-03-11T14:39:28.195182 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Checking for guest additions in VM...
+I, [2015-03-11T14:39:28.248712 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Setting hostname...
+I, [2015-03-11T14:39:41.128642 #29168]  INFO -- default-opscode-ubuntu-1410: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-03-11T14:39:44.511557 #29168]  INFO -- default-opscode-ubuntu-1410: Vagrant instance <default-opscode-ubuntu-1410> created.
+I, [2015-03-11T14:39:44.513578 #29168]  INFO -- default-opscode-ubuntu-1410: Finished creating <default-opscode-ubuntu-1410> (0m57.46s).
+I, [2015-03-11T14:40:24.583632 #30403]  INFO -- default-opscode-ubuntu-1410: -----> Converging <default-opscode-ubuntu-1410>...
+I, [2015-03-11T14:40:24.585771 #30403]  INFO -- default-opscode-ubuntu-1410: Preparing files for transfer
+I, [2015-03-11T14:40:24.585880 #30403]  INFO -- default-opscode-ubuntu-1410: Preparing dna.json
+I, [2015-03-11T14:40:24.612591 #30403]  INFO -- default-opscode-ubuntu-1410: Preparing current project directory as a cookbook
+I, [2015-03-11T14:40:24.613856 #30403]  INFO -- default-opscode-ubuntu-1410: Removing non-cookbook files before transfer
+I, [2015-03-11T14:40:24.614601 #30403]  INFO -- default-opscode-ubuntu-1410: Preparing solo.rb
+I, [2015-03-11T14:40:24.883565 #30403]  INFO -- default-opscode-ubuntu-1410: -----> Installing Chef Omnibus (11.16.4)
+I, [2015-03-11T14:40:24.883929 #30403]  INFO -- default-opscode-ubuntu-1410: downloading https://www.chef.io/chef/install.sh
+I, [2015-03-11T14:40:24.884151 #30403]  INFO -- default-opscode-ubuntu-1410:   to file /tmp/install.sh
+I, [2015-03-11T14:40:24.884371 #30403]  INFO -- default-opscode-ubuntu-1410: trying wget...
+I, [2015-03-11T14:40:30.974015 #30403]  INFO -- default-opscode-ubuntu-1410: Downloading Chef 11.16.4 for ubuntu...
+I, [2015-03-11T14:40:30.974335 #30403]  INFO -- default-opscode-ubuntu-1410: downloading https://www.chef.io/chef/metadata?v=11.16.4&prerelease=false&nightlies=false&p=ubuntu&pv=14.10&m=x86_64
+I, [2015-03-11T14:40:30.974641 #30403]  INFO -- default-opscode-ubuntu-1410:   to file /tmp/install.sh.1605/metadata.txt
+I, [2015-03-11T14:40:30.974700 #30403]  INFO -- default-opscode-ubuntu-1410: trying wget...
+I, [2015-03-11T14:40:36.754492 #30403]  INFO -- default-opscode-ubuntu-1410: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.deb
+I, [2015-03-11T14:40:36.755212 #30403]  INFO -- default-opscode-ubuntu-1410: md5	a9965ce5811ddd75af1b587e40cca934
+I, [2015-03-11T14:40:36.755626 #30403]  INFO -- default-opscode-ubuntu-1410: sha256	0b98b310afc2c0b066648e550e7b59a5e39faf60dc4fd9b4792035d0553c27c3
+I, [2015-03-11T14:40:36.756150 #30403]  INFO -- default-opscode-ubuntu-1410: yolo	true
+I, [2015-03-11T14:40:36.759098 #30403]  INFO -- default-opscode-ubuntu-1410: downloaded metadata file looks valid...
+I, [2015-03-11T14:40:36.766477 #30403]  INFO -- default-opscode-ubuntu-1410: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.deb
+I, [2015-03-11T14:40:36.766746 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:40:36.766794 #30403]  INFO -- default-opscode-ubuntu-1410: trying wget...
+I, [2015-03-11T14:44:48.895460 #30403]  INFO -- default-opscode-ubuntu-1410: Comparing checksum with sha256sum...
+I, [2015-03-11T14:44:49.187092 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:49.187487 #30403]  INFO -- default-opscode-ubuntu-1410: WARNING: Chef-Client has not been regression tested on this O/S Distribution
+I, [2015-03-11T14:44:49.187571 #30403]  INFO -- default-opscode-ubuntu-1410: WARNING: Do not use this configuration for Production Applications.  Use at your own risk.
+I, [2015-03-11T14:44:49.187646 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:49.187705 #30403]  INFO -- default-opscode-ubuntu-1410: Installing Chef 11.16.4
+I, [2015-03-11T14:44:49.187764 #30403]  INFO -- default-opscode-ubuntu-1410: installing with dpkg...
+I, [2015-03-11T14:44:49.226296 #30403]  INFO -- default-opscode-ubuntu-1410: Selecting previously unselected package chef.
+I, [2015-03-11T14:44:49.327681 #30403]  INFO -- default-opscode-ubuntu-1410: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32787 files and directories currently installed.)
+I, [2015-03-11T14:44:49.329330 #30403]  INFO -- default-opscode-ubuntu-1410: Preparing to unpack .../chef_11.16.4-1_amd64.deb ...
+I, [2015-03-11T14:44:49.333250 #30403]  INFO -- default-opscode-ubuntu-1410: Unpacking chef (11.16.4-1) ...
+I, [2015-03-11T14:44:56.450371 #30403]  INFO -- default-opscode-ubuntu-1410: Setting up chef (11.16.4-1) ...
+I, [2015-03-11T14:44:56.525365 #30403]  INFO -- default-opscode-ubuntu-1410: Thank you for installing Chef!
+I, [2015-03-11T14:44:56.591658 #30403]  INFO -- default-opscode-ubuntu-1410: Transferring files to <default-opscode-ubuntu-1410>
+I, [2015-03-11T14:44:58.436380 #30403]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T17:44:53+00:00] WARN: 
+I, [2015-03-11T14:44:58.436704 #30403]  INFO -- default-opscode-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-11T14:44:58.436951 #30403]  INFO -- default-opscode-ubuntu-1410: SSL validation of HTTPS requests is disabled. HTTPS connections are still
+I, [2015-03-11T14:44:58.437189 #30403]  INFO -- default-opscode-ubuntu-1410: encrypted, but chef is not able to detect forged replies or man in the middle
+I, [2015-03-11T14:44:58.437424 #30403]  INFO -- default-opscode-ubuntu-1410: attacks.
+I, [2015-03-11T14:44:58.437580 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:58.437802 #30403]  INFO -- default-opscode-ubuntu-1410: To fix this issue add an entry like this to your configuration file:
+I, [2015-03-11T14:44:58.437954 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:58.438205 #30403]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T14:44:58.438434 #30403]  INFO -- default-opscode-ubuntu-1410:   # Verify all HTTPS connections (recommended)
+I, [2015-03-11T14:44:58.438684 #30403]  INFO -- default-opscode-ubuntu-1410:   ssl_verify_mode :verify_peer
+I, [2015-03-11T14:44:58.438844 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:58.439108 #30403]  INFO -- default-opscode-ubuntu-1410:   # OR, Verify only connections to chef-server
+I, [2015-03-11T14:44:58.439358 #30403]  INFO -- default-opscode-ubuntu-1410:   verify_api_cert true
+I, [2015-03-11T14:44:58.439608 #30403]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T14:44:58.439741 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:58.440030 #30403]  INFO -- default-opscode-ubuntu-1410: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2015-03-11T14:44:58.440091 #30403]  INFO -- default-opscode-ubuntu-1410: `knife ssl check` command like so:
+I, [2015-03-11T14:44:58.440125 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:58.440155 #30403]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T14:44:58.440185 #30403]  INFO -- default-opscode-ubuntu-1410:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2015-03-11T14:44:58.440220 #30403]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T14:44:58.440275 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:58.440309 #30403]  INFO -- default-opscode-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-11T14:44:58.440339 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:44:58.440742 #30403]  INFO -- default-opscode-ubuntu-1410: Starting Chef Client, version 11.16.4
+I, [2015-03-11T14:45:04.868820 #30403]  INFO -- default-opscode-ubuntu-1410: Compiling Cookbooks...
+I, [2015-03-11T14:45:04.872130 #30403]  INFO -- default-opscode-ubuntu-1410: Converging 3 resources
+I, [2015-03-11T14:45:04.872620 #30403]  INFO -- default-opscode-ubuntu-1410: Recipe: rgonzalez-cookbook::default
+I, [2015-03-11T14:45:05.128317 #30403]  INFO -- default-opscode-ubuntu-1410:   * package[java7] action install
+I, [2015-03-11T14:45:05.129415 #30403]  INFO -- default-opscode-ubuntu-1410:     * No version specified, and no candidate version available for java7
+I, [2015-03-11T14:45:05.129785 #30403]  INFO -- default-opscode-ubuntu-1410:     ================================================================================
+I, [2015-03-11T14:45:05.130416 #30403]  INFO -- default-opscode-ubuntu-1410:     Error executing action `install` on resource 'package[java7]'
+I, [2015-03-11T14:45:05.130941 #30403]  INFO -- default-opscode-ubuntu-1410:     ================================================================================
+I, [2015-03-11T14:45:05.131285 #30403]  INFO -- default-opscode-ubuntu-1410:     
+I, [2015-03-11T14:45:05.131494 #30403]  INFO -- default-opscode-ubuntu-1410:     Chef::Exceptions::Package
+I, [2015-03-11T14:45:05.131783 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:45:05.131829 #30403]  INFO -- default-opscode-ubuntu-1410:     No version specified, and no candidate version available for java7
+I, [2015-03-11T14:45:05.131864 #30403]  INFO -- default-opscode-ubuntu-1410:     
+I, [2015-03-11T14:45:05.131896 #30403]  INFO -- default-opscode-ubuntu-1410:     Resource Declaration:
+I, [2015-03-11T14:45:05.131927 #30403]  INFO -- default-opscode-ubuntu-1410:     ---------------------
+I, [2015-03-11T14:45:05.132177 #30403]  INFO -- default-opscode-ubuntu-1410: # In /tmp/kitchen/cookbooks/rgonzalez-cookbook/recipes/default.rb
+I, [2015-03-11T14:45:05.132219 #30403]  INFO -- default-opscode-ubuntu-1410:     
+I, [2015-03-11T14:45:05.132400 #30403]  INFO -- default-opscode-ubuntu-1410:       1: package "java7"
+I, [2015-03-11T14:45:05.132440 #30403]  INFO -- default-opscode-ubuntu-1410:       2: package "tomcat7"
+I, [2015-03-11T14:45:05.132480 #30403]  INFO -- default-opscode-ubuntu-1410:     
+I, [2015-03-11T14:45:05.132528 #30403]  INFO -- default-opscode-ubuntu-1410:     Compiled Resource:
+I, [2015-03-11T14:45:05.132566 #30403]  INFO -- default-opscode-ubuntu-1410:     ------------------
+I, [2015-03-11T14:45:05.132599 #30403]  INFO -- default-opscode-ubuntu-1410:     # Declared in /tmp/kitchen/cookbooks/rgonzalez-cookbook/recipes/default.rb:1:in `from_file'
+I, [2015-03-11T14:45:05.132876 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:45:05.132916 #30403]  INFO -- default-opscode-ubuntu-1410:     package("java7") do
+I, [2015-03-11T14:45:05.132948 #30403]  INFO -- default-opscode-ubuntu-1410:       action :install
+I, [2015-03-11T14:45:05.132979 #30403]  INFO -- default-opscode-ubuntu-1410:       retries 0
+I, [2015-03-11T14:45:05.133011 #30403]  INFO -- default-opscode-ubuntu-1410:       retry_delay 2
+I, [2015-03-11T14:45:05.133042 #30403]  INFO -- default-opscode-ubuntu-1410:       guard_interpreter :default
+I, [2015-03-11T14:45:05.133073 #30403]  INFO -- default-opscode-ubuntu-1410:       package_name "java7"
+I, [2015-03-11T14:45:05.133103 #30403]  INFO -- default-opscode-ubuntu-1410:       timeout 900
+I, [2015-03-11T14:45:05.133137 #30403]  INFO -- default-opscode-ubuntu-1410:       cookbook_name :"rgonzalez-cookbook"
+I, [2015-03-11T14:45:05.133468 #30403]  INFO -- default-opscode-ubuntu-1410:   recipe_name "default"
+I, [2015-03-11T14:45:05.133644 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:45:05.133810 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:45:05.133850 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:45:05.134098 #30403]  INFO -- default-opscode-ubuntu-1410: Running handlers:
+I, [2015-03-11T14:45:05.134268 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:45:05.134308 #30403]  INFO -- default-opscode-ubuntu-1410: Running handlers complete
+I, [2015-03-11T14:45:05.134720 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:45:05.139497 #30403]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:45:05.139589 #30403]  INFO -- default-opscode-ubuntu-1410: Chef Client failed. 0 resources updated in 6.590730305 seconds
+I, [2015-03-11T14:45:05.153865 #30403]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T17:45:00+00:00] ERROR: package[java7] (rgonzalez-cookbook::default line 1) had an error: Chef::Exceptions::Package: No version specified, and no candidate version available for java7
+I, [2015-03-11T14:45:05.191891 #30403]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T17:45:00+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-03-11T14:45:05.220169 #30403] ERROR -- default-opscode-ubuntu-1410: Converge failed on instance <default-opscode-ubuntu-1410>.
+E, [2015-03-11T14:45:05.220303 #30403] ERROR -- default-opscode-ubuntu-1410: ------Exception-------
+E, [2015-03-11T14:45:05.220340 #30403] ERROR -- default-opscode-ubuntu-1410: Class: Kitchen::ActionFailed
+E, [2015-03-11T14:45:05.220369 #30403] ERROR -- default-opscode-ubuntu-1410: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-03-11T14:45:05.220395 #30403] ERROR -- default-opscode-ubuntu-1410: ---Nested Exception---
+E, [2015-03-11T14:45:05.220422 #30403] ERROR -- default-opscode-ubuntu-1410: Class: Kitchen::SSHFailed
+E, [2015-03-11T14:45:05.220449 #30403] ERROR -- default-opscode-ubuntu-1410: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-03-11T14:45:05.220477 #30403] ERROR -- default-opscode-ubuntu-1410: ------Backtrace-------
+E, [2015-03-11T14:45:05.220502 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-03-11T14:45:05.220529 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-03-11T14:45:05.220555 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-03-11T14:45:05.220580 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-03-11T14:45:05.220606 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-03-11T14:45:05.220632 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-03-11T14:45:05.220658 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-03-11T14:45:05.220685 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-11T14:45:05.220711 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-11T14:45:05.220738 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-03-11T14:45:05.220765 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-03-11T14:45:05.220793 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-11T14:45:05.220820 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2015-03-11T14:45:05.220847 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-11T14:45:05.220874 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-11T14:45:05.220913 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-03-11T14:45:05.220941 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-11T14:45:05.220969 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-11T14:45:05.220996 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-11T14:45:05.221023 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-03-11T14:45:05.221050 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-11T14:45:05.221077 #30403] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-11T14:45:05.221104 #30403] ERROR -- default-opscode-ubuntu-1410: ----------------------
+I, [2015-03-11T14:49:46.890272 #30537]  INFO -- default-opscode-ubuntu-1410: -----> Converging <default-opscode-ubuntu-1410>...
+I, [2015-03-11T14:49:46.892288 #30537]  INFO -- default-opscode-ubuntu-1410: Preparing files for transfer
+I, [2015-03-11T14:49:46.892371 #30537]  INFO -- default-opscode-ubuntu-1410: Preparing dna.json
+I, [2015-03-11T14:49:46.892635 #30537]  INFO -- default-opscode-ubuntu-1410: Preparing current project directory as a cookbook
+I, [2015-03-11T14:49:46.893700 #30537]  INFO -- default-opscode-ubuntu-1410: Removing non-cookbook files before transfer
+I, [2015-03-11T14:49:46.894390 #30537]  INFO -- default-opscode-ubuntu-1410: Preparing solo.rb
+I, [2015-03-11T14:49:48.333868 #30537]  INFO -- default-opscode-ubuntu-1410: -----> Chef Omnibus installation detected (11.16.4)
+I, [2015-03-11T14:49:48.375702 #30537]  INFO -- default-opscode-ubuntu-1410: Transferring files to <default-opscode-ubuntu-1410>
+I, [2015-03-11T14:49:49.999657 #30537]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T17:49:40+00:00] WARN: 
+I, [2015-03-11T14:49:50.000197 #30537]  INFO -- default-opscode-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-11T14:49:50.000620 #30537]  INFO -- default-opscode-ubuntu-1410: SSL validation of HTTPS requests is disabled. HTTPS connections are still
+I, [2015-03-11T14:49:50.001041 #30537]  INFO -- default-opscode-ubuntu-1410: encrypted, but chef is not able to detect forged replies or man in the middle
+I, [2015-03-11T14:49:50.001324 #30537]  INFO -- default-opscode-ubuntu-1410: attacks.
+I, [2015-03-11T14:49:50.001393 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:50.001451 #30537]  INFO -- default-opscode-ubuntu-1410: To fix this issue add an entry like this to your configuration file:
+I, [2015-03-11T14:49:50.001509 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:50.001566 #30537]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T14:49:50.001625 #30537]  INFO -- default-opscode-ubuntu-1410:   # Verify all HTTPS connections (recommended)
+I, [2015-03-11T14:49:50.001683 #30537]  INFO -- default-opscode-ubuntu-1410:   ssl_verify_mode :verify_peer
+I, [2015-03-11T14:49:50.001737 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:50.019596 #30537]  INFO -- default-opscode-ubuntu-1410:   # OR, Verify only connections to chef-server
+I, [2015-03-11T14:49:50.019721 #30537]  INFO -- default-opscode-ubuntu-1410:   verify_api_cert true
+I, [2015-03-11T14:49:50.019785 #30537]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T14:49:50.019860 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:50.019921 #30537]  INFO -- default-opscode-ubuntu-1410: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2015-03-11T14:49:50.019980 #30537]  INFO -- default-opscode-ubuntu-1410: `knife ssl check` command like so:
+I, [2015-03-11T14:49:50.020036 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:50.020089 #30537]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T14:49:50.020141 #30537]  INFO -- default-opscode-ubuntu-1410:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2015-03-11T14:49:50.020191 #30537]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T14:49:50.020244 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:50.020298 #30537]  INFO -- default-opscode-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-11T14:49:50.020355 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:50.021095 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:56.650306 #30537]  INFO -- default-opscode-ubuntu-1410: Compiling Cookbooks...
+I, [2015-03-11T14:49:56.653149 #30537]  INFO -- default-opscode-ubuntu-1410: Converging 0 resources
+I, [2015-03-11T14:49:56.653577 #30537]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T14:49:56.654019 #30537]  INFO -- default-opscode-ubuntu-1410: Running handlers:
+I, [2015-03-11T14:49:56.654424 #30537]  INFO -- default-opscode-ubuntu-1410: Running handlers complete
+I, [2015-03-11T14:49:56.654822 #30537]  INFO -- default-opscode-ubuntu-1410: Chef Client finished, 0/0 resources updated in 6.545930001 seconds
+I, [2015-03-11T14:49:56.737274 #30537]  INFO -- default-opscode-ubuntu-1410: Finished converging <default-opscode-ubuntu-1410> (0m9.84s).
+I, [2015-03-11T14:50:36.566750 #30590]  INFO -- default-opscode-ubuntu-1410: -----> Destroying <default-opscode-ubuntu-1410>...
+I, [2015-03-11T14:50:39.345640 #30590]  INFO -- default-opscode-ubuntu-1410: ==> default: Forcing shutdown of VM...
+I, [2015-03-11T14:50:40.708838 #30590]  INFO -- default-opscode-ubuntu-1410: ==> default: Destroying VM and associated drives...
+I, [2015-03-11T14:50:41.312175 #30590]  INFO -- default-opscode-ubuntu-1410: Vagrant instance <default-opscode-ubuntu-1410> destroyed.
+I, [2015-03-11T14:50:41.314103 #30590]  INFO -- default-opscode-ubuntu-1410: Finished destroying <default-opscode-ubuntu-1410> (0m4.75s).
+I, [2015-03-11T15:14:38.771843 #31347]  INFO -- default-opscode-ubuntu-1410: -----> Creating <default-opscode-ubuntu-1410>...
+I, [2015-03-11T15:14:40.396471 #31347]  INFO -- default-opscode-ubuntu-1410: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-03-11T15:14:40.604006 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Importing base box 'opscode-ubuntu-14.10'...
+I, [2015-03-11T15:14:59.097229 #31347]  INFO -- default-opscode-ubuntu-1410: [KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-03-11T15:14:59.948561 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Setting the name of the VM: default-opscode-ubuntu-1410_default_1426097699879_33085
+I, [2015-03-11T15:15:00.657059 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2015-03-11T15:15:00.710598 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Clearing any previously set network interfaces...
+I, [2015-03-11T15:15:00.907552 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Preparing network interfaces based on configuration...
+I, [2015-03-11T15:15:00.908140 #31347]  INFO -- default-opscode-ubuntu-1410:     default: Adapter 1: nat
+I, [2015-03-11T15:15:01.061107 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Forwarding ports...
+I, [2015-03-11T15:15:01.128601 #31347]  INFO -- default-opscode-ubuntu-1410:     default: 22 => 2200 (adapter 1)
+I, [2015-03-11T15:15:01.607407 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Booting VM...
+I, [2015-03-11T15:15:02.289815 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2200
+I, [2015-03-11T15:15:02.289973 #31347]  INFO -- default-opscode-ubuntu-1410:     default: SSH username: vagrant
+I, [2015-03-11T15:15:02.290188 #31347]  INFO -- default-opscode-ubuntu-1410:     default: SSH auth method: private key
+I, [2015-03-11T15:15:17.438384 #31347]  INFO -- default-opscode-ubuntu-1410:     default: Warning: Connection timeout. Retrying...
+I, [2015-03-11T15:15:18.207011 #31347]  INFO -- default-opscode-ubuntu-1410:     default: 
+I, [2015-03-11T15:15:18.207131 #31347]  INFO -- default-opscode-ubuntu-1410:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-03-11T15:15:18.207187 #31347]  INFO -- default-opscode-ubuntu-1410:     default: this with a newly generated keypair for better security.
+I, [2015-03-11T15:15:19.105129 #31347]  INFO -- default-opscode-ubuntu-1410:     default: 
+I, [2015-03-11T15:15:19.105252 #31347]  INFO -- default-opscode-ubuntu-1410:     default: Inserting generated public key within guest...
+I, [2015-03-11T15:15:19.517235 #31347]  INFO -- default-opscode-ubuntu-1410:     default: Removing insecure key from the guest if its present...
+I, [2015-03-11T15:15:19.783615 #31347]  INFO -- default-opscode-ubuntu-1410:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-03-11T15:15:20.959731 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Machine booted and ready!
+I, [2015-03-11T15:15:20.960353 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Checking for guest additions in VM...
+I, [2015-03-11T15:15:21.009741 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Setting hostname...
+I, [2015-03-11T15:15:33.536973 #31347]  INFO -- default-opscode-ubuntu-1410: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-03-11T15:15:35.700788 #31347]  INFO -- default-opscode-ubuntu-1410: Vagrant instance <default-opscode-ubuntu-1410> created.
+I, [2015-03-11T15:15:35.708472 #31347]  INFO -- default-opscode-ubuntu-1410: Finished creating <default-opscode-ubuntu-1410> (0m56.93s).
+I, [2015-03-11T15:15:35.708672 #31347]  INFO -- default-opscode-ubuntu-1410: -----> Converging <default-opscode-ubuntu-1410>...
+I, [2015-03-11T15:15:35.709518 #31347]  INFO -- default-opscode-ubuntu-1410: Preparing files for transfer
+I, [2015-03-11T15:15:35.709638 #31347]  INFO -- default-opscode-ubuntu-1410: Preparing dna.json
+I, [2015-03-11T15:15:35.709969 #31347]  INFO -- default-opscode-ubuntu-1410: Preparing current project directory as a cookbook
+I, [2015-03-11T15:15:35.739821 #31347]  INFO -- default-opscode-ubuntu-1410: Removing non-cookbook files before transfer
+I, [2015-03-11T15:15:35.740646 #31347]  INFO -- default-opscode-ubuntu-1410: Preparing solo.rb
+I, [2015-03-11T15:15:35.963607 #31347]  INFO -- default-opscode-ubuntu-1410: -----> Installing Chef Omnibus (11.16.4)
+I, [2015-03-11T15:15:35.963956 #31347]  INFO -- default-opscode-ubuntu-1410: downloading https://www.chef.io/chef/install.sh
+I, [2015-03-11T15:15:35.964182 #31347]  INFO -- default-opscode-ubuntu-1410:   to file /tmp/install.sh
+I, [2015-03-11T15:15:35.964409 #31347]  INFO -- default-opscode-ubuntu-1410: trying wget...
+I, [2015-03-11T15:15:42.345114 #31347]  INFO -- default-opscode-ubuntu-1410: Downloading Chef 11.16.4 for ubuntu...
+I, [2015-03-11T15:15:42.345378 #31347]  INFO -- default-opscode-ubuntu-1410: downloading https://www.chef.io/chef/metadata?v=11.16.4&prerelease=false&nightlies=false&p=ubuntu&pv=14.10&m=x86_64
+I, [2015-03-11T15:15:42.345426 #31347]  INFO -- default-opscode-ubuntu-1410:   to file /tmp/install.sh.1575/metadata.txt
+I, [2015-03-11T15:15:42.345631 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:15:48.422864 #31347]  INFO -- default-opscode-ubuntu-1410: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.deb
+I, [2015-03-11T15:15:48.423566 #31347]  INFO -- default-opscode-ubuntu-1410: md5	a9965ce5811ddd75af1b587e40cca934
+I, [2015-03-11T15:15:48.424207 #31347]  INFO -- default-opscode-ubuntu-1410: sha256	0b98b310afc2c0b066648e550e7b59a5e39faf60dc4fd9b4792035d0553c27c3
+I, [2015-03-11T15:15:48.424641 #31347]  INFO -- default-opscode-ubuntu-1410: yolo	true
+I, [2015-03-11T15:15:48.427417 #31347]  INFO -- default-opscode-ubuntu-1410: downloaded metadata file looks valid...
+I, [2015-03-11T15:15:48.433819 #31347]  INFO -- default-opscode-ubuntu-1410: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.deb
+I, [2015-03-11T15:15:48.434162 #31347]  INFO -- default-opscode-ubuntu-1410:   to file /tmp/install.sh.1575/chef_11.16.4-1_amd64.deb
+I, [2015-03-11T15:15:48.434216 #31347]  INFO -- default-opscode-ubuntu-1410: trying wget...
+I, [2015-03-11T15:18:23.578386 #31347]  INFO -- default-opscode-ubuntu-1410: Comparing checksum with sha256sum...
+I, [2015-03-11T15:18:23.899812 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:23.900773 #31347]  INFO -- default-opscode-ubuntu-1410: WARNING: Chef-Client has not been regression tested on this O/S Distribution
+I, [2015-03-11T15:18:23.900896 #31347]  INFO -- default-opscode-ubuntu-1410: WARNING: Do not use this configuration for Production Applications.  Use at your own risk.
+I, [2015-03-11T15:18:23.900964 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:23.901019 #31347]  INFO -- default-opscode-ubuntu-1410: Installing Chef 11.16.4
+I, [2015-03-11T15:18:23.901070 #31347]  INFO -- default-opscode-ubuntu-1410: installing with dpkg...
+I, [2015-03-11T15:18:23.945252 #31347]  INFO -- default-opscode-ubuntu-1410: Selecting previously unselected package chef.
+I, [2015-03-11T15:18:24.059028 #31347]  INFO -- default-opscode-ubuntu-1410: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32787 files and directories currently installed.)
+I, [2015-03-11T15:18:24.060898 #31347]  INFO -- default-opscode-ubuntu-1410: Preparing to unpack .../chef_11.16.4-1_amd64.deb ...
+I, [2015-03-11T15:18:24.065352 #31347]  INFO -- default-opscode-ubuntu-1410: Unpacking chef (11.16.4-1) ...
+I, [2015-03-11T15:18:32.038898 #31347]  INFO -- default-opscode-ubuntu-1410: Setting up chef (11.16.4-1) ...
+I, [2015-03-11T15:18:32.126777 #31347]  INFO -- default-opscode-ubuntu-1410: Thank you for installing Chef!
+I, [2015-03-11T15:18:32.191870 #31347]  INFO -- default-opscode-ubuntu-1410: Transferring files to <default-opscode-ubuntu-1410>
+I, [2015-03-11T15:18:34.271490 #31347]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T18:18:34+00:00] WARN: 
+I, [2015-03-11T15:18:34.271934 #31347]  INFO -- default-opscode-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-11T15:18:34.272286 #31347]  INFO -- default-opscode-ubuntu-1410: SSL validation of HTTPS requests is disabled. HTTPS connections are still
+I, [2015-03-11T15:18:34.272647 #31347]  INFO -- default-opscode-ubuntu-1410: encrypted, but chef is not able to detect forged replies or man in the middle
+I, [2015-03-11T15:18:34.272964 #31347]  INFO -- default-opscode-ubuntu-1410: attacks.
+I, [2015-03-11T15:18:34.273157 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:34.273473 #31347]  INFO -- default-opscode-ubuntu-1410: To fix this issue add an entry like this to your configuration file:
+I, [2015-03-11T15:18:34.273708 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:34.273776 #31347]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T15:18:34.273820 #31347]  INFO -- default-opscode-ubuntu-1410:   # Verify all HTTPS connections (recommended)
+I, [2015-03-11T15:18:34.273870 #31347]  INFO -- default-opscode-ubuntu-1410:   ssl_verify_mode :verify_peer
+I, [2015-03-11T15:18:34.273910 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:34.273952 #31347]  INFO -- default-opscode-ubuntu-1410:   # OR, Verify only connections to chef-server
+I, [2015-03-11T15:18:34.273993 #31347]  INFO -- default-opscode-ubuntu-1410:   verify_api_cert true
+I, [2015-03-11T15:18:34.274033 #31347]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T15:18:34.274073 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:34.274113 #31347]  INFO -- default-opscode-ubuntu-1410: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2015-03-11T15:18:34.274158 #31347]  INFO -- default-opscode-ubuntu-1410: `knife ssl check` command like so:
+I, [2015-03-11T15:18:34.274198 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:34.274241 #31347]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T15:18:34.274288 #31347]  INFO -- default-opscode-ubuntu-1410:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2015-03-11T15:18:34.274760 #31347]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T15:18:34.274812 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:34.274860 #31347]  INFO -- default-opscode-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-11T15:18:34.274914 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:34.275339 #31347]  INFO -- default-opscode-ubuntu-1410: Starting Chef Client, version 11.16.4
+I, [2015-03-11T15:18:46.129738 #31347]  INFO -- default-opscode-ubuntu-1410: Compiling Cookbooks...
+I, [2015-03-11T15:18:46.130066 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.130363 #31347]  INFO -- default-opscode-ubuntu-1410: Recipe `java::oracle` is not in the run_list, and cookbook 'java'
+I, [2015-03-11T15:18:46.131404 #31347]  INFO -- default-opscode-ubuntu-1410: is not a dependency of any cookbook in the run_list.  To load this recipe,
+I, [2015-03-11T15:18:46.131484 #31347]  INFO -- default-opscode-ubuntu-1410: first add a dependency on cookbook 'java' in the cookbook you're
+I, [2015-03-11T15:18:46.131543 #31347]  INFO -- default-opscode-ubuntu-1410: including it from in that cookbook's metadata.
+I, [2015-03-11T15:18:46.131594 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.131645 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.132028 #31347]  INFO -- default-opscode-ubuntu-1410: ================================================================================
+I, [2015-03-11T15:18:46.132322 #31347]  INFO -- default-opscode-ubuntu-1410: Recipe Compile Error in /tmp/kitchen/cookbooks/rgonzalez-cookbook/recipes/default.rb
+I, [2015-03-11T15:18:46.132775 #31347]  INFO -- default-opscode-ubuntu-1410: ================================================================================
+I, [2015-03-11T15:18:46.132838 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.132898 #31347]  INFO -- default-opscode-ubuntu-1410: Chef::Exceptions::CookbookNotFound
+I, [2015-03-11T15:18:46.132960 #31347]  INFO -- default-opscode-ubuntu-1410: ----------------------------------
+I, [2015-03-11T15:18:46.133014 #31347]  INFO -- default-opscode-ubuntu-1410: Cookbook java not found. If you're loading java from another cookbook, make sure you configure the dependency in your metadata
+I, [2015-03-11T15:18:46.133065 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.133356 #31347]  INFO -- default-opscode-ubuntu-1410: Cookbook Trace:
+I, [2015-03-11T15:18:46.133410 #31347]  INFO -- default-opscode-ubuntu-1410: ---------------
+I, [2015-03-11T15:18:46.133466 #31347]  INFO -- default-opscode-ubuntu-1410:   /tmp/kitchen/cookbooks/rgonzalez-cookbook/recipes/default.rb:1:in `from_file'
+I, [2015-03-11T15:18:46.133536 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.133587 #31347]  INFO -- default-opscode-ubuntu-1410: Relevant File Content:
+I, [2015-03-11T15:18:46.133845 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.133891 #31347]  INFO -- default-opscode-ubuntu-1410: /tmp/kitchen/cookbooks/rgonzalez-cookbook/recipes/default.rb:
+I, [2015-03-11T15:18:46.133944 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.133996 #31347]  INFO -- default-opscode-ubuntu-1410:   1>> include_recipe "java::oracle"  2:  
+I, [2015-03-11T15:18:46.134046 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.134094 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.134440 #31347]  INFO -- default-opscode-ubuntu-1410: Running handlers:
+I, [2015-03-11T15:18:46.134493 #31347]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T18:18:46+00:00] ERROR: Running exception handlers
+I, [2015-03-11T15:18:46.134707 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.134765 #31347]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T18:18:46+00:00] ERROR: Exception handlers complete
+I, [2015-03-11T15:18:46.134971 #31347]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:18:46.135454 #31347]  INFO -- default-opscode-ubuntu-1410: Chef Client failed. 0 resources updated in 11.868963348 seconds
+I, [2015-03-11T15:18:46.153253 #31347]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T18:18:46+00:00] ERROR: Cookbook java not found. If you're loading java from another cookbook, make sure you configure the dependency in your metadata
+I, [2015-03-11T15:18:46.198157 #31347]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T18:18:46+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-03-11T15:18:46.230899 #31347] ERROR -- default-opscode-ubuntu-1410: Converge failed on instance <default-opscode-ubuntu-1410>.
+E, [2015-03-11T15:18:46.231056 #31347] ERROR -- default-opscode-ubuntu-1410: ------Exception-------
+E, [2015-03-11T15:18:46.231122 #31347] ERROR -- default-opscode-ubuntu-1410: Class: Kitchen::ActionFailed
+E, [2015-03-11T15:18:46.231161 #31347] ERROR -- default-opscode-ubuntu-1410: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-03-11T15:18:46.231192 #31347] ERROR -- default-opscode-ubuntu-1410: ---Nested Exception---
+E, [2015-03-11T15:18:46.231218 #31347] ERROR -- default-opscode-ubuntu-1410: Class: Kitchen::SSHFailed
+E, [2015-03-11T15:18:46.231244 #31347] ERROR -- default-opscode-ubuntu-1410: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-03-11T15:18:46.231283 #31347] ERROR -- default-opscode-ubuntu-1410: ------Backtrace-------
+E, [2015-03-11T15:18:46.231315 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-03-11T15:18:46.231357 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-03-11T15:18:46.231406 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-03-11T15:18:46.231457 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-03-11T15:18:46.231502 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-03-11T15:18:46.231555 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-03-11T15:18:46.231616 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-03-11T15:18:46.231672 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-11T15:18:46.231725 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-11T15:18:46.231771 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-03-11T15:18:46.231820 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-03-11T15:18:46.231868 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-11T15:18:46.231914 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2015-03-11T15:18:46.231962 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-11T15:18:46.232014 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-11T15:18:46.232064 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-03-11T15:18:46.232108 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-11T15:18:46.232138 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-11T15:18:46.232165 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-11T15:18:46.232195 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-03-11T15:18:46.232222 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-11T15:18:46.232250 #31347] ERROR -- default-opscode-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-11T15:18:46.232278 #31347] ERROR -- default-opscode-ubuntu-1410: ----------------------
+I, [2015-03-11T15:19:03.365423 #32657]  INFO -- default-opscode-ubuntu-1410: -----> Converging <default-opscode-ubuntu-1410>...
+I, [2015-03-11T15:19:03.367575 #32657]  INFO -- default-opscode-ubuntu-1410: Preparing files for transfer
+I, [2015-03-11T15:19:03.367660 #32657]  INFO -- default-opscode-ubuntu-1410: Preparing dna.json
+I, [2015-03-11T15:19:03.367907 #32657]  INFO -- default-opscode-ubuntu-1410: Preparing current project directory as a cookbook
+I, [2015-03-11T15:19:03.368990 #32657]  INFO -- default-opscode-ubuntu-1410: Removing non-cookbook files before transfer
+I, [2015-03-11T15:19:03.369733 #32657]  INFO -- default-opscode-ubuntu-1410: Preparing solo.rb
+I, [2015-03-11T15:19:05.073781 #32657]  INFO -- default-opscode-ubuntu-1410: -----> Chef Omnibus installation detected (11.16.4)
+I, [2015-03-11T15:19:05.115665 #32657]  INFO -- default-opscode-ubuntu-1410: Transferring files to <default-opscode-ubuntu-1410>
+I, [2015-03-11T15:19:07.027399 #32657]  INFO -- default-opscode-ubuntu-1410: [2015-03-11T18:19:07+00:00] WARN: 
+I, [2015-03-11T15:19:07.027880 #32657]  INFO -- default-opscode-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-11T15:19:07.043968 #32657]  INFO -- default-opscode-ubuntu-1410: SSL validation of HTTPS requests is disabled. HTTPS connections are still
+I, [2015-03-11T15:19:07.044389 #32657]  INFO -- default-opscode-ubuntu-1410: encrypted, but chef is not able to detect forged replies or man in the middle
+I, [2015-03-11T15:19:07.044741 #32657]  INFO -- default-opscode-ubuntu-1410: attacks.
+I, [2015-03-11T15:19:07.044985 #32657]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:19:07.045351 #32657]  INFO -- default-opscode-ubuntu-1410: To fix this issue add an entry like this to your configuration file:
+I, [2015-03-11T15:19:07.045595 #32657]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:19:07.045855 #32657]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T15:19:07.045921 #32657]  INFO -- default-opscode-ubuntu-1410:   # Verify all HTTPS connections (recommended)
+I, [2015-03-11T15:19:07.045972 #32657]  INFO -- default-opscode-ubuntu-1410:   ssl_verify_mode :verify_peer
+I, [2015-03-11T15:19:07.046020 #32657]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:19:07.046080 #32657]  INFO -- default-opscode-ubuntu-1410:   # OR, Verify only connections to chef-server
+I, [2015-03-11T15:19:07.046136 #32657]  INFO -- default-opscode-ubuntu-1410:   verify_api_cert true
+I, [2015-03-11T15:19:07.046183 #32657]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T15:19:07.046228 #32657]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:19:07.046290 #32657]  INFO -- default-opscode-ubuntu-1410: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2015-03-11T15:19:07.046349 #32657]  INFO -- default-opscode-ubuntu-1410: `knife ssl check` command like so:
+I, [2015-03-11T15:19:07.046397 #32657]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:19:07.046441 #32657]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T15:19:07.046490 #32657]  INFO -- default-opscode-ubuntu-1410:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2015-03-11T15:19:07.046550 #32657]  INFO -- default-opscode-ubuntu-1410: ```
+I, [2015-03-11T15:19:07.046608 #32657]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:19:07.047352 #32657]  INFO -- default-opscode-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-11T15:19:07.047413 #32657]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:19:07.047777 #32657]  INFO -- default-opscode-ubuntu-1410: Starting Chef Client, version 11.16.4
+I, [2015-03-11T15:19:13.677547 #32657]  INFO -- default-opscode-ubuntu-1410: Compiling Cookbooks...
+I, [2015-03-11T15:19:13.680225 #32657]  INFO -- default-opscode-ubuntu-1410: Converging 0 resources
+I, [2015-03-11T15:19:13.680720 #32657]  INFO -- default-opscode-ubuntu-1410: 
+I, [2015-03-11T15:19:13.681241 #32657]  INFO -- default-opscode-ubuntu-1410: Running handlers:
+I, [2015-03-11T15:19:13.681531 #32657]  INFO -- default-opscode-ubuntu-1410: Running handlers complete
+I, [2015-03-11T15:19:13.682005 #32657]  INFO -- default-opscode-ubuntu-1410: Chef Client finished, 0/0 resources updated in 6.658799299 seconds
+I, [2015-03-11T15:19:13.778697 #32657]  INFO -- default-opscode-ubuntu-1410: Finished converging <default-opscode-ubuntu-1410> (0m10.41s).
