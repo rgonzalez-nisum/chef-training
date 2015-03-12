@@ -1,0 +1,148 @@
+I, [2015-03-12T17:32:14.482677 #9930]  INFO -- server-ubuntu-1410: -----> Creating <server-ubuntu-1410>...
+I, [2015-03-12T17:32:15.689032 #9930]  INFO -- server-ubuntu-1410: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-03-12T17:32:15.960573 #9930]  INFO -- server-ubuntu-1410: ==> default: Importing base box 'opscode-ubuntu-14.10'...
+I, [2015-03-12T17:32:40.758354 #9930]  INFO -- server-ubuntu-1410: [KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-03-12T17:32:41.352053 #9930]  INFO -- server-ubuntu-1410: ==> default: Setting the name of the VM: server-ubuntu-1410_default_1426192361313_91829
+I, [2015-03-12T17:32:41.892901 #9930]  INFO -- server-ubuntu-1410: ==> default: Clearing any previously set network interfaces...
+I, [2015-03-12T17:32:41.990451 #9930]  INFO -- server-ubuntu-1410: ==> default: Preparing network interfaces based on configuration...
+I, [2015-03-12T17:32:41.990641 #9930]  INFO -- server-ubuntu-1410:     default: Adapter 1: nat
+I, [2015-03-12T17:32:42.146871 #9930]  INFO -- server-ubuntu-1410: ==> default: Forwarding ports...
+I, [2015-03-12T17:32:42.200977 #9930]  INFO -- server-ubuntu-1410:     default: 22 => 2222 (adapter 1)
+I, [2015-03-12T17:32:42.670505 #9930]  INFO -- server-ubuntu-1410: ==> default: Booting VM...
+I, [2015-03-12T17:32:42.923268 #9930]  INFO -- server-ubuntu-1410: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-03-12T17:32:43.173839 #9930]  INFO -- server-ubuntu-1410:     default: SSH address: 127.0.0.1:2222
+I, [2015-03-12T17:32:43.174007 #9930]  INFO -- server-ubuntu-1410:     default: SSH username: vagrant
+I, [2015-03-12T17:32:43.174043 #9930]  INFO -- server-ubuntu-1410:     default: SSH auth method: private key
+I, [2015-03-12T17:32:58.286655 #9930]  INFO -- server-ubuntu-1410:     default: Warning: Connection timeout. Retrying...
+I, [2015-03-12T17:32:58.813845 #9930]  INFO -- server-ubuntu-1410:     default: 
+I, [2015-03-12T17:32:58.813941 #9930]  INFO -- server-ubuntu-1410:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-03-12T17:32:58.813983 #9930]  INFO -- server-ubuntu-1410:     default: this with a newly generated keypair for better security.
+I, [2015-03-12T17:32:59.497883 #9930]  INFO -- server-ubuntu-1410:     default: 
+I, [2015-03-12T17:32:59.497989 #9930]  INFO -- server-ubuntu-1410:     default: Inserting generated public key within guest...
+I, [2015-03-12T17:32:59.848046 #9930]  INFO -- server-ubuntu-1410:     default: Removing insecure key from the guest if its present...
+I, [2015-03-12T17:33:00.108294 #9930]  INFO -- server-ubuntu-1410:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-03-12T17:33:00.927870 #9930]  INFO -- server-ubuntu-1410: ==> default: Machine booted and ready!
+I, [2015-03-12T17:33:00.928468 #9930]  INFO -- server-ubuntu-1410: ==> default: Checking for guest additions in VM...
+I, [2015-03-12T17:33:00.971921 #9930]  INFO -- server-ubuntu-1410: ==> default: Setting hostname...
+I, [2015-03-12T17:33:09.569915 #9930]  INFO -- server-ubuntu-1410: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-03-12T17:33:11.089551 #9930]  INFO -- server-ubuntu-1410: Vagrant instance <server-ubuntu-1410> created.
+I, [2015-03-12T17:33:11.091422 #9930]  INFO -- server-ubuntu-1410: Finished creating <server-ubuntu-1410> (0m56.61s).
+I, [2015-03-12T17:33:11.091556 #9930]  INFO -- server-ubuntu-1410: -----> Converging <server-ubuntu-1410>...
+I, [2015-03-12T17:33:11.092200 #9930]  INFO -- server-ubuntu-1410: Preparing files for transfer
+I, [2015-03-12T17:33:11.092273 #9930]  INFO -- server-ubuntu-1410: Preparing dna.json
+I, [2015-03-12T17:33:11.095999 #9930]  INFO -- server-ubuntu-1410: Resolving cookbook dependencies with Berkshelf 2.0.18...
+E, [2015-03-12T17:33:11.097488 #9930] ERROR -- server-ubuntu-1410: Converge failed on instance <server-ubuntu-1410>.
+E, [2015-03-12T17:33:11.097578 #9930] ERROR -- server-ubuntu-1410: ------Exception-------
+E, [2015-03-12T17:33:11.097605 #9930] ERROR -- server-ubuntu-1410: Class: Berkshelf::BerksfileReadError
+E, [2015-03-12T17:33:11.097630 #9930] ERROR -- server-ubuntu-1410: Message: Berkshelf::BerksfileReadError
+E, [2015-03-12T17:33:11.097650 #9930] ERROR -- server-ubuntu-1410: ------Backtrace-------
+E, [2015-03-12T17:33:11.097669 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/chef-training/chef-repo/cookbooks/rgonzalezLoadBalancer/Berksfile:1:in `block in dsl_eval_file'
+E, [2015-03-12T17:33:11.097689 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/berkshelf-2.0.18/lib/berkshelf/mixin/dsl_eval.rb:54:in `eval'
+E, [2015-03-12T17:33:11.097707 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/berkshelf-2.0.18/lib/berkshelf/mixin/dsl_eval.rb:54:in `block in dsl_eval_file'
+E, [2015-03-12T17:33:11.097728 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/berkshelf-2.0.18/lib/berkshelf/mixin/dsl_eval.rb:44:in `instance_eval'
+E, [2015-03-12T17:33:11.097747 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/berkshelf-2.0.18/lib/berkshelf/mixin/dsl_eval.rb:44:in `dsl_eval'
+E, [2015-03-12T17:33:11.097768 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/berkshelf-2.0.18/lib/berkshelf/mixin/dsl_eval.rb:54:in `dsl_eval_file'
+E, [2015-03-12T17:33:11.097786 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/berkshelf-2.0.18/lib/berkshelf/berksfile.rb:12:in `from_file'
+E, [2015-03-12T17:33:11.097808 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef/berkshelf.rb:70:in `block in resolve'
+E, [2015-03-12T17:33:11.097826 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/thor-0.18.1/lib/thor/shell/basic.rb:19:in `mute'
+E, [2015-03-12T17:33:11.097846 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef/berkshelf.rb:64:in `resolve'
+E, [2015-03-12T17:33:11.097865 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef_base.rb:430:in `block in resolve_with_berkshelf'
+E, [2015-03-12T17:33:11.097886 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef_base.rb:429:in `synchronize'
+E, [2015-03-12T17:33:11.097908 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef_base.rb:429:in `resolve_with_berkshelf'
+E, [2015-03-12T17:33:11.097930 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef_base.rb:274:in `prepare_cookbooks'
+E, [2015-03-12T17:33:11.097951 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef_base.rb:106:in `create_sandbox'
+E, [2015-03-12T17:33:11.097972 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef_solo.rb:38:in `create_sandbox'
+E, [2015-03-12T17:33:11.097994 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2015-03-12T17:33:11.098014 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-03-12T17:33:11.098033 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-12T17:33:11.098052 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-12T17:33:11.098080 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-03-12T17:33:11.098103 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-03-12T17:33:11.098125 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-12T17:33:11.098146 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2015-03-12T17:33:11.098170 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-12T17:33:11.098193 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-12T17:33:11.098213 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-03-12T17:33:11.098234 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-12T17:33:11.098255 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-12T17:33:11.098276 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-12T17:33:11.098296 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-03-12T17:33:11.098316 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-12T17:33:11.098340 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-12T17:33:11.098361 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/logging-1.8.2/lib/logging/diagnostic_context.rb:323:in `call'
+E, [2015-03-12T17:33:11.098381 #9930] ERROR -- server-ubuntu-1410: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/logging-1.8.2/lib/logging/diagnostic_context.rb:323:in `block in create_with_logging_context'
+E, [2015-03-12T17:33:11.098402 #9930] ERROR -- server-ubuntu-1410: ----------------------
+I, [2015-03-12T17:36:03.117033 #11322]  INFO -- server-ubuntu-1410: -----> Converging <server-ubuntu-1410>...
+I, [2015-03-12T17:36:03.118626 #11322]  INFO -- server-ubuntu-1410: Preparing files for transfer
+I, [2015-03-12T17:36:03.118694 #11322]  INFO -- server-ubuntu-1410: Preparing dna.json
+I, [2015-03-12T17:36:03.122309 #11322]  INFO -- server-ubuntu-1410: Resolving cookbook dependencies with Berkshelf 2.0.18...
+I, [2015-03-12T17:36:03.131496 #11322]  INFO -- server-ubuntu-1410: Removing non-cookbook files before transfer
+I, [2015-03-12T17:36:03.132810 #11322]  INFO -- server-ubuntu-1410: Preparing solo.rb
+I, [2015-03-12T17:36:03.337107 #11322]  INFO -- server-ubuntu-1410: -----> Installing Chef Omnibus (11.16.4)
+I, [2015-03-12T17:36:03.337397 #11322]  INFO -- server-ubuntu-1410: downloading https://www.chef.io/chef/install.sh
+I, [2015-03-12T17:36:03.337551 #11322]  INFO -- server-ubuntu-1410:   to file /tmp/install.sh
+I, [2015-03-12T17:36:03.337713 #11322]  INFO -- server-ubuntu-1410: trying wget...
+I, [2015-03-12T17:36:09.608943 #11322]  INFO -- server-ubuntu-1410: Downloading Chef 11.16.4 for ubuntu...
+I, [2015-03-12T17:36:09.609205 #11322]  INFO -- server-ubuntu-1410: downloading https://www.chef.io/chef/metadata?v=11.16.4&prerelease=false&nightlies=false&p=ubuntu&pv=14.10&m=x86_64
+I, [2015-03-12T17:36:09.609269 #11322]  INFO -- server-ubuntu-1410:   to file /tmp/install.sh.1605/metadata.txt
+I, [2015-03-12T17:36:09.609411 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:36:15.707509 #11322]  INFO -- server-ubuntu-1410: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.deb
+I, [2015-03-12T17:36:15.707866 #11322]  INFO -- server-ubuntu-1410: md5	a9965ce5811ddd75af1b587e40cca934
+I, [2015-03-12T17:36:15.708216 #11322]  INFO -- server-ubuntu-1410: sha256	0b98b310afc2c0b066648e550e7b59a5e39faf60dc4fd9b4792035d0553c27c3
+I, [2015-03-12T17:36:15.708675 #11322]  INFO -- server-ubuntu-1410: yolo	true
+I, [2015-03-12T17:36:15.710850 #11322]  INFO -- server-ubuntu-1410: downloaded metadata file looks valid...
+I, [2015-03-12T17:36:15.716612 #11322]  INFO -- server-ubuntu-1410: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/13.04/x86_64/chef_11.16.4-1_amd64.deb
+I, [2015-03-12T17:36:15.716688 #11322]  INFO -- server-ubuntu-1410:   to file /tmp/install.sh.1605/chef_11.16.4-1_amd64.deb
+I, [2015-03-12T17:36:15.716714 #11322]  INFO -- server-ubuntu-1410: trying wget...
+I, [2015-03-12T17:37:17.907286 #11322]  INFO -- server-ubuntu-1410: Comparing checksum with sha256sum...
+I, [2015-03-12T17:37:18.129649 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:18.129922 #11322]  INFO -- server-ubuntu-1410: WARNING: Chef-Client has not been regression tested on this O/S Distribution
+I, [2015-03-12T17:37:18.129969 #11322]  INFO -- server-ubuntu-1410: WARNING: Do not use this configuration for Production Applications.  Use at your own risk.
+I, [2015-03-12T17:37:18.129996 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:18.130019 #11322]  INFO -- server-ubuntu-1410: Installing Chef 11.16.4
+I, [2015-03-12T17:37:18.130043 #11322]  INFO -- server-ubuntu-1410: installing with dpkg...
+I, [2015-03-12T17:37:18.160929 #11322]  INFO -- server-ubuntu-1410: Selecting previously unselected package chef.
+I, [2015-03-12T17:37:18.243164 #11322]  INFO -- server-ubuntu-1410: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 32787 files and directories currently installed.)
+I, [2015-03-12T17:37:18.244266 #11322]  INFO -- server-ubuntu-1410: Preparing to unpack .../chef_11.16.4-1_amd64.deb ...
+I, [2015-03-12T17:37:18.247415 #11322]  INFO -- server-ubuntu-1410: Unpacking chef (11.16.4-1) ...
+I, [2015-03-12T17:37:23.735393 #11322]  INFO -- server-ubuntu-1410: Setting up chef (11.16.4-1) ...
+I, [2015-03-12T17:37:23.791302 #11322]  INFO -- server-ubuntu-1410: Thank you for installing Chef!
+I, [2015-03-12T17:37:23.849055 #11322]  INFO -- server-ubuntu-1410: Transferring files to <server-ubuntu-1410>
+I, [2015-03-12T17:37:25.423346 #11322]  INFO -- server-ubuntu-1410: [2015-03-12T20:37:25+00:00] WARN: 
+I, [2015-03-12T17:37:25.423643 #11322]  INFO -- server-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-12T17:37:25.423846 #11322]  INFO -- server-ubuntu-1410: SSL validation of HTTPS requests is disabled. HTTPS connections are still
+I, [2015-03-12T17:37:25.424132 #11322]  INFO -- server-ubuntu-1410: encrypted, but chef is not able to detect forged replies or man in the middle
+I, [2015-03-12T17:37:25.424445 #11322]  INFO -- server-ubuntu-1410: attacks.
+I, [2015-03-12T17:37:25.425074 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:25.425118 #11322]  INFO -- server-ubuntu-1410: To fix this issue add an entry like this to your configuration file:
+I, [2015-03-12T17:37:25.425145 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:25.425179 #11322]  INFO -- server-ubuntu-1410: ```
+I, [2015-03-12T17:37:25.425202 #11322]  INFO -- server-ubuntu-1410:   # Verify all HTTPS connections (recommended)
+I, [2015-03-12T17:37:25.425225 #11322]  INFO -- server-ubuntu-1410:   ssl_verify_mode :verify_peer
+I, [2015-03-12T17:37:25.425247 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:25.425269 #11322]  INFO -- server-ubuntu-1410:   # OR, Verify only connections to chef-server
+I, [2015-03-12T17:37:25.425291 #11322]  INFO -- server-ubuntu-1410:   verify_api_cert true
+I, [2015-03-12T17:37:25.425313 #11322]  INFO -- server-ubuntu-1410: ```
+I, [2015-03-12T17:37:25.425335 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:25.425358 #11322]  INFO -- server-ubuntu-1410: To check your SSL configuration, or troubleshoot errors, you can use the
+I, [2015-03-12T17:37:25.425381 #11322]  INFO -- server-ubuntu-1410: `knife ssl check` command like so:
+I, [2015-03-12T17:37:25.425403 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:25.425425 #11322]  INFO -- server-ubuntu-1410: ```
+I, [2015-03-12T17:37:25.425448 #11322]  INFO -- server-ubuntu-1410:   knife ssl check -c /tmp/kitchen/solo.rb
+I, [2015-03-12T17:37:25.425471 #11322]  INFO -- server-ubuntu-1410: ```
+I, [2015-03-12T17:37:25.425494 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:25.425517 #11322]  INFO -- server-ubuntu-1410: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+I, [2015-03-12T17:37:25.425540 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:25.425837 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:31.631274 #11322]  INFO -- server-ubuntu-1410: Compiling Cookbooks...
+I, [2015-03-12T17:37:31.633338 #11322]  INFO -- server-ubuntu-1410: Converging 0 resources
+I, [2015-03-12T17:37:31.633648 #11322]  INFO -- server-ubuntu-1410: 
+I, [2015-03-12T17:37:31.633876 #11322]  INFO -- server-ubuntu-1410: Running handlers:
+I, [2015-03-12T17:37:31.634105 #11322]  INFO -- server-ubuntu-1410: Running handlers complete
+I, [2015-03-12T17:37:31.634436 #11322]  INFO -- server-ubuntu-1410: Chef Client finished, 0/0 resources updated in 6.215281032 seconds
+I, [2015-03-12T17:37:31.702920 #11322]  INFO -- server-ubuntu-1410: Finished converging <server-ubuntu-1410> (1m28.58s).
+I, [2015-03-12T17:45:27.817090 #11529]  INFO -- server-ubuntu-1410: -----> Destroying <server-ubuntu-1410>...
+I, [2015-03-12T17:45:29.723590 #11529]  INFO -- server-ubuntu-1410: ==> default: Forcing shutdown of VM...
+I, [2015-03-12T17:45:30.934685 #11529]  INFO -- server-ubuntu-1410: ==> default: Destroying VM and associated drives...
+I, [2015-03-12T17:45:31.387221 #11529]  INFO -- server-ubuntu-1410: Vagrant instance <server-ubuntu-1410> destroyed.
+I, [2015-03-12T17:45:31.389218 #11529]  INFO -- server-ubuntu-1410: Finished destroying <server-ubuntu-1410> (0m3.57s).

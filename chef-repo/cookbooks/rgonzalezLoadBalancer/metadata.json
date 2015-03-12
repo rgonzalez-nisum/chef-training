@@ -1,0 +1,39 @@
+{
+  "name": "rgonzalezLoadBalancer",
+  "description": "Installs/Configures rgonzalezLoadBalancer",
+  "long_description": "Installs/Configures rgonzalezLoadBalancer",
+  "maintainer": "Ricardo Gonzalez",
+  "maintainer_email": "rgonzalez@nisum.com",
+  "license": "All rights reserved",
+  "platforms": {
+
+  },
+  "dependencies": {
+
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "0.1.0"
+}
