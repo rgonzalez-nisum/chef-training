@@ -1,0 +1,12 @@
+http {
+    upstream app {
+        <% @servers.each do |server| %>
+        server <%= server['ipaddress'] %>;
+        <% end %>
+    }
+    server {
+        location / {
+            proxy_pass http://app;
+        }
+    }
+}

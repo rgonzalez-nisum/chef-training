@@ -1,0 +1,39 @@
+{
+  "name": "rgCookbook",
+  "description": "Installs/Configures rgCookbook",
+  "long_description": "Installs/Configures rgCookbook",
+  "maintainer": "Ricardo Gonzalez",
+  "maintainer_email": "rgonzalez@nisum.com",
+  "license": "All rights reserved",
+  "platforms": {
+
+  },
+  "dependencies": {
+
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title><%= node['webserver']['title'] %></title>
+	</head>
+	<body>
+		<div>
+			<h1><%= node['webserver']['title'] %></h1>
+		</div>
+		<div>
+			<p>
+				I'm working! And this is showing from node: 
+				 - Hostname: <%= node['hostname'] %> 
+				 - IP: <%= node['ipaddress'] %>
+			</p>
+		</div>
+	</body>
+</html>

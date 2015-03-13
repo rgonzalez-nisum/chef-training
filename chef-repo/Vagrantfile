@@ -1,14 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
 Vagrant.configure(2) do |config|
-  config.vm.box = "opscode-ubuntu-14.10"
+  config.ssh.username = "vagrant"
+  config.ssh.password = "vagrant"
 
-  config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.10_chef-provisionerless.box"
-
-  config.omnibus.chef_version = "11.16.4"
-
-  config.vm.provision :chef_client do |chef|
-    chef.chef_server_url = "https://chef-cl.nisum.com/"
-    chef.validation_key_path = "./.chef/validation.pem"
-    chef.node_name = "rgonzalezNode"
+  config.vm.define :rgLoadBalancer do |lb|
+    lb.vm.box = "opscode-centos-6.6"
+    lb.vm.network "private_network", ip: "33.33.33.30"
+    lb.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
   end
 
+  config.vm.define :rgWebServer01 do |ws|
+    ws.vm.box = "opscode-centos-6.6"
+    ws.vm.network "private_network", ip: "33.33.33.31"
+    ws.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
+  end
+
+  config.vm.define :rgWebServer02 do |ws|
+    ws.vm.box = "opscode-centos-6.6"
+    ws.vm.network "private_network", ip: "33.33.33.32"
+    ws.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
+  end
 end
