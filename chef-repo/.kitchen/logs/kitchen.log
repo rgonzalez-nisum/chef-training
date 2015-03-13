@@ -1,0 +1,31 @@
+I, [2015-03-13T19:23:05.492372 #1910]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-03-13T19:23:05.492743 #1910] ERROR -- Kitchen: ------Exception-------
+E, [2015-03-13T19:23:05.492772 #1910] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-03-13T19:23:05.492792 #1910] ERROR -- Kitchen: Message: Kitchen YAML file /home/rgonzalez/chef-training/chef-repo/.kitchen.yml does not exist.
+E, [2015-03-13T19:23:05.492813 #1910] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-03-13T19:23:05.492831 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2015-03-13T19:23:05.492851 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:139:in `data'
+E, [2015-03-13T19:23:05.492870 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:118:in `suites'
+E, [2015-03-13T19:23:05.492888 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:169:in `filter_instances'
+E, [2015-03-13T19:23:05.492917 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-03-13T19:23:05.492936 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:104:in `instances'
+E, [2015-03-13T19:23:05.492954 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-03-13T19:23:05.492972 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-03-13T19:23:05.492991 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2015-03-13T19:23:05.493009 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/rubies/ruby-2.0.0-p598/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2015-03-13T19:23:05.493027 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/command/action.rb:37:in `call'
+E, [2015-03-13T19:23:05.493046 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-03-13T19:23:05.493064 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:161:in `block (2 levels) in <class:CLI>'
+E, [2015-03-13T19:23:05.493082 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2015-03-13T19:23:05.493100 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2015-03-13T19:23:05.493121 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-03-13T19:23:05.493151 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2015-03-13T19:23:05.493180 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2015-03-13T19:23:05.493210 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-03-13T19:23:05.493232 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-03-13T19:23:05.493251 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/gems/test-kitchen-1.3.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-03-13T19:23:05.493269 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/bin/kitchen:23:in `load'
+E, [2015-03-13T19:23:05.493287 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/bin/kitchen:23:in `<main>'
+E, [2015-03-13T19:23:05.493311 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-03-13T19:23:05.493330 #1910] ERROR -- Kitchen: /home/rgonzalez/.rvm/gems/ruby-2.0.0-p598/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-03-13T19:23:05.493348 #1910] ERROR -- Kitchen: ----------------------
