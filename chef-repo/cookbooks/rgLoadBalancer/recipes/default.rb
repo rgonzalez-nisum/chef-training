@@ -8,7 +8,7 @@
 #
 include_recipe 'nginx'
 
-servers = search(:node, "recipe:rgCookbook::rgWebServer")
+servers = search(:node, "role:rgNodeToBalance")
 
 template "#{node['nginx']['dir']}" do
 	owner node['template']['owner']
