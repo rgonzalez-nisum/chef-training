@@ -7,19 +7,19 @@ Vagrant.configure(2) do |config|
 
   config.vm.define :rgLoadBalancer do |lb|
     lb.vm.box = "opscode-centos-6.6"
-    lb.vm.network "private_network", ip: "33.33.33.30"
+    lb.vm.network "private_network", ip: "77.77.77.70"
     lb.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
   end
 
   config.vm.define :rgWebServer01 do |ws|
     ws.vm.box = "opscode-centos-6.6"
-    ws.vm.network "private_network", ip: "33.33.33.31"
+    ws.vm.network "private_network", ip: "77.77.77.71"
     ws.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
   end
 
   config.vm.define :rgWebServer02 do |ws|
     ws.vm.box = "opscode-centos-6.6"
-    ws.vm.network "private_network", ip: "33.33.33.33"
+    ws.vm.network "private_network", ip: "77.77.77.72"
     ws.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box"
   end
 end
