@@ -1,3 +1,5 @@
-site "http://cookbooks.opscode.com/api/v1/cookbooks"
+site :opscode
 
 metadata
+
+cookbook 'nginx', '~> 2.7.4'

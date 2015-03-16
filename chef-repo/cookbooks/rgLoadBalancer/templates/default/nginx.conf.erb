@@ -5,6 +5,9 @@ http {
         <% end %>
     }
     server {
+        listen          80;
+        server_name     <%= node['template']['servername'] %>;
+
         location / {
             proxy_pass http://app;
         }

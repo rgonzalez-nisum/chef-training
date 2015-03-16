@@ -14,8 +14,8 @@ service httpdOrApache2 do
   action [:start, :enable]
 end
 
-template node['template']['indexUrl'] do
-  owner node['template']['owner']
-  group node['template']['group']
-  mode node['template']['mode']
+template node['webserver']['indexUrl'] do
+  owner node['webserver']['owner']
+  group node['webserver']['group']
+  mode node['webserver']['mode']
 end

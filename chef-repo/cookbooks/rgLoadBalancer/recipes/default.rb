@@ -10,7 +10,7 @@ include_recipe 'nginx'
 
 servers = search(:node, "role:rgNodeToBalance")
 
-template "#{node['nginx']['dir']}" do
+template "#{node['nginx']['source']['conf_path']}" do
 	owner node['template']['owner']
   	group node['template']['group']
   	mode node['template']['mode']
